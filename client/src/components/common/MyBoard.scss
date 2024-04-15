@@ -1,0 +1,51 @@
+@import '../styles/variables';
+
+.myBoard {
+  @include board-style();
+
+  .hit {
+    background-color: $color-red;
+  }
+
+  .miss {
+    background-color: $color-light-blue;
+  }
+
+  .horizondal {
+    z-index: 1;
+    margin: 15px 0px 0px 10px;
+    min-height: 15px !important;
+  }
+
+  .vertical {
+    z-index: 1;
+    margin: 10px 0px 0px 15px;
+    min-width: 15px !important;
+    width: 15px !important;
+  }
+
+  .ship-5 {
+    min-height: 215px;
+    min-width: 215px;
+  }
+
+  .ship-4 {
+    min-height: 170px;
+    min-width: 170px;
+  }
+
+  .ship-3 {
+    min-height: 125px;
+    min-width: 125px;
+  }
+
+  .ship-2 {
+    min-height: 80px;
+    min-width: 80px;
+  }
+
+  .ship-1 {
+    min-height: 35px;
+    min-width: 35px;
+  }
+}

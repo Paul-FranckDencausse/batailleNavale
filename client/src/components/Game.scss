@@ -1,0 +1,34 @@
+@import './styles/variables';
+
+.game {
+  .contents {
+    display: flex;
+    justify-content: center;
+    padding: 0px 25px;
+
+    .gBoard {
+      padding: 10px;
+      width: 50%;
+      min-width: 560px;
+
+      .tabHeader {
+        justify-content: center;
+        position: initial;
+
+        .tabHeaderText {
+          @include text-style(25px, 700, $color-blue);
+          text-transform: none;
+        }
+      }
+
+      .tabContent {
+        margin-bottom: 25px;
+      }
+    }
+
+    .activity {
+      padding: 10px;
+      width: 25%;
+    }
+  }
+}

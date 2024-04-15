@@ -1,0 +1,82 @@
+@import '../styles/variables';
+
+.planningCard {
+  padding: 10px;
+  width: 25%;
+
+  .planning {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .cardTitle {
+      @include text-style(25px, 700, $color-blue);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .cardText {
+      @include text-style(18px, 700, $color-blue);
+      text-align: center;
+    }
+
+    .instruction {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .ships {
+
+      margin: 20px 0px;
+
+      .ship {
+        display: flex;
+        align-items: baseline;
+
+
+        :first-child {
+          width: 80%;
+        }
+
+        :last-child {
+          width: 20%;
+        }
+
+        .ship-5 {
+          max-width: 215px;
+          width: 75%;
+        }
+
+        .ship-4 {
+          max-width: 170px;
+          width: 60%;
+        }
+
+        .ship-3 {
+          max-width: 125px;
+          width: 45%;
+        }
+
+        .ship-2 {
+          max-width: 80px;
+          width: 30%;
+        }
+
+        .ship-1 {
+          max-width: 35px;
+          width: 15%;
+        }
+      }
+    }
+  }
+
+  .readyButton {
+    @include button-light();
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .readyButton:disabled {
+    background-color: $color-light-blue;
+  }
+}

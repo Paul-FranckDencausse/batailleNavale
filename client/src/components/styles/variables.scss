@@ -1,0 +1,83 @@
+$color-black: #000;
+$color-blue: #263865;
+$color-light-blue: #435FA7;
+$color-white: #FFF;
+$color-red: #F00;
+
+@mixin text-style($size, $weight, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin button-dark() {
+  border-radius: 30px;
+  font-weight: 700;
+  background-color: $color-blue;
+  color: $color-white;
+  text-transform: none !important;
+}
+
+@mixin button-light() {
+  border-radius: 30px;
+  font-weight: 700;
+  background-color: $color-white;
+  color: $color-blue;
+  text-transform: none !important;
+}
+
+@mixin textbox-style() {
+  border-radius: 10px;
+  color: $color-blue;
+}
+
+@mixin board-style() {
+  .board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .bRow {
+      display: flex;
+
+      .bCol {
+        display: flex;
+        height: 45px;
+        width: 45px;
+        border: 1px solid;
+        font-size: 20px;
+        font-weight: 600;
+        color: $color-black;
+        border-color: $color-black;
+      }
+
+      .bNum {
+        border-left-color: $color-white;
+        border-right-color: $color-white;
+        border-top-color: $color-white;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .bAlp {
+        border-bottom-color: $color-white;
+        border-left-color: $color-white;
+        border-top-color: $color-white;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .bCorner {
+        border-color: $color-white;
+      }
+
+      .bRow-9 {
+        border-bottom: 3px solid;
+      }
+
+      .bCol-9 {
+        border-right: 3px solid;
+      }
+    }
+  }
+}

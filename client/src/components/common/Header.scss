@@ -1,0 +1,11 @@
+@import '../styles/variables';
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 35px;
+
+  .title {
+    @include text-style(60px, 700, $color-white);
+  }
+}

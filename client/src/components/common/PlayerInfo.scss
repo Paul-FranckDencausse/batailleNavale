@@ -1,0 +1,16 @@
+@import '../styles/variables';
+
+.playerInfo {
+  padding: 10px;
+  width: 25%;
+
+  .playerButton {
+    @include button-light();
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .playerButton:disabled {
+    background-color: $color-light-blue;
+  }
+}

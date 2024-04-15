@@ -1,0 +1,40 @@
+@import './styles/variables';
+
+.home {
+  .titleSection {
+    display: flex;
+    justify-content: center;
+
+    .title {
+      @include text-style(30px, 700, $color-blue);
+    }
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    margin: 75px 0px;
+
+    .controls {
+      display: flex;
+
+      .nameField {
+        @include textbox-style();
+      }
+
+      .setButton {
+        @include button-dark();
+        margin-left: 10px;
+      }
+    }
+
+    .hostButton {
+      @include button-dark();
+      margin: 5px 0px;
+    }
+
+    .joinButton {
+      @include button-dark();
+    }
+  }
+}

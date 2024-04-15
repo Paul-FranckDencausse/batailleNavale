@@ -1,0 +1,19 @@
+@import '../styles/variables';
+
+.opponentBoard {
+  @include board-style();
+
+  .hit {
+    justify-content: center;
+    align-items: center;
+    color: $color-red !important;
+    font-size: 45px !important;
+  }
+
+  .miss {
+    justify-content: center;
+    align-items: center;
+    color: $color-blue !important;
+    font-size: 45px !important;
+  }
+}

@@ -1,0 +1,31 @@
+@import '../styles/variables';
+
+.activityHistory {
+  padding: 10px;
+  width: 25%;
+
+  .activities {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .cardTitle {
+      @include text-style(25px, 700, $color-blue);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .activityEntry {
+      @include text-style(20px, 700, $color-blue);
+    }
+
+    .hit {
+      color: #F00;
+    }
+
+    .miss {
+      color: $color-blue;
+    }
+
+  }
+}

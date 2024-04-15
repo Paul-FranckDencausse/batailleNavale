@@ -1,0 +1,14 @@
+@import '../styles/variables';
+
+.winner {
+  display: block !important;
+
+  .winnerText {
+    @include text-style(35px, 700, $color-blue);
+  }
+
+  .exitButton {
+    @include button-dark();
+    width: 100px;
+  }
+}
